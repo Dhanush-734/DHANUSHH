@@ -15,6 +15,7 @@ import { Certifications } from './components/Certifications';
 import { Postcard } from './components/Postcard';
 import { Footer } from './components/Footer';
 import { ResumeModal } from './components/ResumeModal';
+import { BackgroundDragonTattoo } from './components/BackgroundDragonTattoo';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,12 +48,15 @@ export function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#fcf9f8] text-[#1c1b1b] dark:bg-[#101114] dark:text-[#F5F1E8] flex flex-col font-body selection:bg-[#ffd84d] selection:text-[#1c1b1b] dark:selection:bg-[#FFD43B] dark:selection:text-[#101114]">
+    <div className="min-h-screen bg-[#fcf9f8] text-[#1c1b1b] dark:bg-[#101114] dark:text-[#F5F1E8] flex flex-col font-body selection:bg-[#ffd84d] selection:text-[#1c1b1b] dark:selection:bg-[#FFD43B] dark:selection:text-[#101114] relative">
+      {/* Background Dragon Tattoo Watermark (Black for Light Mode, White for Dark Mode) */}
+      <BackgroundDragonTattoo />
+
       {/* Top Application Bar */}
       <Navbar soundEnabled={soundEnabled} setSoundEnabled={setSoundEnabled} />
 
       {/* Main Content Sections */}
-      <main className="flex-1 max-w-4xl w-full mx-auto px-4 py-8 space-y-12">
+      <main className="flex-1 max-w-4xl w-full mx-auto px-4 py-8 space-y-12 relative z-10">
         {/* Hero Section */}
         <Hero onOpenResumeModal={() => setResumeOpen(true)} />
 
