@@ -16,11 +16,11 @@
     <script>
       (function() {
         try {
-          var t = localStorage.getItem('dhanush_theme');
-          if (t === 'dark' || (!t && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-            document.documentElement.setAttribute('data-theme', 'dark');
-          }
+          // Always ensure the website opens in Light Mode first when the link is opened
+          localStorage.removeItem('dhanush_theme');
+          sessionStorage.removeItem('dhanush_theme');
+          document.documentElement.classList.remove('dark');
+          document.documentElement.setAttribute('data-theme', 'light');
         } catch (e) {}
       })();
     </script>

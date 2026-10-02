@@ -11,30 +11,12 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-const THEME_STORAGE_KEY = 'dhanush_theme';
-
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [theme, setThemeState] = useState<Theme>(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        const stored = localStorage.getItem(THEME_STORAGE_KEY);
-        if (stored === 'dark' || stored === 'light') {
-          return stored;
-        }
-        // Check system preference as fallback if not set
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          return 'dark';
-        }
-      } catch {
-        // LocalStorage access may fail in certain environments
-      }
-    }
-    return 'light';
-  });
+  // Always default to Light Mode when link is opened
+  const [theme, setThemeState] = useState<Theme>('light');
 
   useEffect(() => {
     const root = document.documentElement;
-    // Enable smooth theme switching transition
     root.classList.add('theme-transition');
 
     if (theme === 'dark') {
@@ -47,15 +29,9 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       root.style.colorScheme = 'light';
     }
 
-    try {
-      localStorage.setItem(THEME_STORAGE_KEY, theme);
-    } catch {
-      // Ignore localStorage write errors
-    }
-
     const timer = setTimeout(() => {
       root.classList.remove('theme-transition');
-    }, 400);
+    }, 350);
 
     return () => clearTimeout(timer);
   }, [theme]);
