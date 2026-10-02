@@ -26,7 +26,7 @@ export const Projects: React.FC = () => {
       id: 'proj-1',
       fileTitle: 'weather_analytics_v2.py',
       badge: 'ML_APP',
-      headerBg: 'bg-[#69c9f0]',
+      headerBg: 'bg-[#69c9f0] text-[#1c1b1b]',
       title: 'Weather Prediction & Analytics Dashboard',
       desc: 'Interactive forecasting dashboard parsing real-time meteorological sensor feeds. Leverages scikit-learn models for precipitation forecasting with instant Streamlit rendering.',
       tags: ['Python', 'Pandas', 'Scikit-Learn', 'Streamlit'],
@@ -44,7 +44,7 @@ export const Projects: React.FC = () => {
       id: 'proj-2',
       fileTitle: 'marketing_roi_calc.sql',
       badge: 'BI_ANALYTICS',
-      headerBg: 'bg-[#9be5c3]',
+      headerBg: 'bg-[#9be5c3] text-[#1c1b1b]',
       title: 'Marketing Campaign & Multi-Channel ROI Analytics',
       desc: 'Comprehensive attribution model aggregating conversion pipelines from Google Ads, Meta, and newsletters into PostgreSQL. Generated high-fidelity Power BI performance dashboards.',
       tags: ['SQL', 'Power BI', 'PostgreSQL', 'Python'],
@@ -62,7 +62,7 @@ export const Projects: React.FC = () => {
       id: 'proj-3',
       fileTitle: 'airflow_dag_orchestrator.py',
       badge: 'DATA_PIPELINE',
-      headerBg: 'bg-[#ffd84d]',
+      headerBg: 'bg-[#ffd84d] text-[#1c1b1b]',
       title: 'Data Engineering ETL Visualizer',
       desc: 'Automated data ingestion workflow running in Dockerized Airflow DAGs. Extracts multi-format APIs, normalizes raw JSON data, and loads sanitized datasets into a relational PostgreSQL lakehouse.',
       tags: ['Apache Airflow', 'PostgreSQL', 'Docker', 'Python'],
@@ -80,7 +80,7 @@ export const Projects: React.FC = () => {
       id: 'proj-4',
       fileTitle: 'snowflake_lakehouse.sql',
       badge: 'WAREHOUSE',
-      headerBg: 'bg-[#ff7777]',
+      headerBg: 'bg-[#ff7777] text-[#1c1b1b]',
       title: 'E-Commerce Sales & Customer Analytics',
       desc: 'Modeled a star-schema analytical warehouse in Snowflake. Automated transformation models via DBT and staged cloud assets in Amazon S3 for granular cohort retention reporting.',
       tags: ['Snowflake', 'AWS S3', 'DBT', 'Tableau'],
@@ -98,7 +98,7 @@ export const Projects: React.FC = () => {
       id: 'proj-5',
       fileTitle: 'placement_system.py',
       badge: 'CAMPUS_SYSTEM',
-      headerBg: 'bg-[#e5e2e1]',
+      headerBg: 'bg-[#e5e2e1] dark:bg-[#353842] text-[#1c1b1b] dark:text-[#F5F1E8]',
       title: 'Student Placement Analysis System',
       desc: 'Campus placement predictor and resume parser service created for academic performance evaluations. Built with FastAPI and machine learning classifiers to predict placement likelihood.',
       tags: ['FastAPI', 'Scikit-Learn', 'Python', 'MySQL'],
@@ -123,13 +123,13 @@ export const Projects: React.FC = () => {
     <section className="space-y-6 pt-2" id="projects">
       {/* Title & Count Badge */}
       <div className="flex items-center justify-between">
-        <div className="inline-flex items-center gap-2 bg-white px-3 py-1 border-2 border-[#1c1b1b] shadow-[3px_3px_0px_#1c1b1b] rotate-1">
-          <FolderGit2 className="w-4 h-4 text-[#725c00]" />
+        <div className="inline-flex items-center gap-2 bg-white dark:bg-[#24262D] text-[#1c1b1b] dark:text-[#F5F1E8] px-3 py-1 border-2 border-[#1c1b1b] dark:border-[#353842] shadow-[3px_3px_0px_#1c1b1b] dark:shadow-[3px_3px_0px_#000000] rotate-1">
+          <FolderGit2 className="w-4 h-4 text-[#725c00] dark:text-[#FFD43B]" />
           <span className="font-headline text-lg font-black">
             Things I've Built 🚀
           </span>
         </div>
-        <span className="font-code text-xs uppercase font-extrabold bg-[#ffd84d] text-[#1c1b1b] px-2.5 py-0.5 border border-[#1c1b1b] shadow-[1.5px_1.5px_0px_#1c1b1b]">
+        <span className="font-code text-xs uppercase font-extrabold bg-[#ffd84d] dark:bg-[#FFD43B] text-[#1c1b1b] dark:text-[#101114] px-2.5 py-0.5 border border-[#1c1b1b] dark:border-[#353842] shadow-[1.5px_1.5px_0px_#1c1b1b] dark:shadow-[1.5px_1.5px_0px_#000000]">
           5 FEATURED PROJECTS
         </span>
       </div>
@@ -143,19 +143,19 @@ export const Projects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: idx * 0.08 }}
-            className="bg-white border-[3px] border-[#1c1b1b] shadow-[5px_5px_0px_#1c1b1b] overflow-hidden"
+            className="bg-white dark:bg-[#24262D] border-[3px] border-[#1c1b1b] dark:border-[#353842] shadow-[5px_5px_0px_#1c1b1b] dark:shadow-[5px_5px_0px_#000000] overflow-hidden transition-colors"
           >
             {/* Retro Window Header */}
-            <div className={`${proj.headerBg} px-3.5 py-2 border-b-[2.5px] border-[#1c1b1b] flex items-center justify-between`}>
+            <div className={`${proj.headerBg} px-3.5 py-2 border-b-[2.5px] border-[#1c1b1b] dark:border-[#353842] flex items-center justify-between`}>
               <div className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#ba1a1a] border border-[#1c1b1b]" />
-                <span className="w-2.5 h-2.5 rounded-full bg-[#ffd84d] border border-[#1c1b1b]" />
-                <span className="w-2.5 h-2.5 rounded-full bg-[#9be5c3] border border-[#1c1b1b]" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[#ba1a1a] border border-[#1c1b1b] dark:border-[#353842]" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[#ffd84d] border border-[#1c1b1b] dark:border-[#353842]" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[#9be5c3] border border-[#1c1b1b] dark:border-[#353842]" />
                 <span className="font-code text-xs text-[#1c1b1b] font-black ml-2">
                   {proj.fileTitle}
                 </span>
               </div>
-              <span className="font-code text-[10px] uppercase font-black bg-white px-2 py-0.5 border border-[#1c1b1b] shadow-[1px_1px_0px_#1c1b1b]">
+              <span className="font-code text-[10px] uppercase font-black bg-white dark:bg-[#191B20] text-[#1c1b1b] dark:text-[#F5F1E8] px-2 py-0.5 border border-[#1c1b1b] dark:border-[#353842] shadow-[1px_1px_0px_#1c1b1b] dark:shadow-[1px_1px_0px_#000000]">
                 {proj.badge}
               </span>
             </div>
@@ -163,23 +163,23 @@ export const Projects: React.FC = () => {
             {/* Content Body */}
             <div className="p-4 sm:p-5 space-y-3.5">
               <div className="flex flex-wrap items-start justify-between gap-2">
-                <h3 className="font-headline text-xl sm:text-2xl font-black text-[#1c1b1b]">
+                <h3 className="font-headline text-xl sm:text-2xl font-black text-[#1c1b1b] dark:text-[#F5F1E8]">
                   {proj.title}
                 </h3>
               </div>
 
-              <p className="font-body text-sm sm:text-base text-[#1c1b1b] leading-relaxed">
+              <p className="font-body text-sm sm:text-base text-[#1c1b1b] dark:text-[#d0cbbf] leading-relaxed">
                 {proj.desc}
               </p>
 
               {/* Metrics Bar */}
-              <div className="grid grid-cols-3 gap-2 bg-[#fcf9f8] p-2.5 border-2 border-[#1c1b1b]">
+              <div className="grid grid-cols-3 gap-2 bg-[#fcf9f8] dark:bg-[#191B20] p-2.5 border-2 border-[#1c1b1b] dark:border-[#353842]">
                 {proj.metrics.map((m, i) => (
                   <div key={i} className="text-center">
-                    <div className="font-headline text-sm sm:text-base font-black text-[#725c00]">
+                    <div className="font-headline text-sm sm:text-base font-black text-[#725c00] dark:text-[#FFD43B]">
                       {m.value}
                     </div>
-                    <div className="font-code text-[9px] sm:text-[10px] uppercase text-[#4d4634] font-bold">
+                    <div className="font-code text-[9px] sm:text-[10px] uppercase text-[#4d4634] dark:text-[#d0cbbf] font-bold">
                       {m.label}
                     </div>
                   </div>
@@ -191,7 +191,7 @@ export const Projects: React.FC = () => {
                 {proj.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="font-code text-xs font-bold bg-[#f0eded] text-[#1c1b1b] px-2.5 py-1 border border-[#1c1b1b] shadow-[1px_1px_0px_#1c1b1b]"
+                    className="font-code text-xs font-bold bg-[#f0eded] dark:bg-[#191B20] text-[#1c1b1b] dark:text-[#55DFFF] px-2.5 py-1 border border-[#1c1b1b] dark:border-[#353842] shadow-[1px_1px_0px_#1c1b1b] dark:shadow-[1px_1px_0px_#000000]"
                   >
                     {tag}
                   </span>
@@ -199,13 +199,13 @@ export const Projects: React.FC = () => {
               </div>
 
               {/* Action Buttons */}
-              <div className="flex flex-wrap items-center gap-3 pt-2 border-t-2 border-dashed border-[#1c1b1b]">
+              <div className="flex flex-wrap items-center gap-3 pt-2 border-t-2 border-dashed border-[#1c1b1b] dark:border-[#353842]">
                 <a
                   href={proj.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => sfx.blip(600, 0.04)}
-                  className="font-code text-xs font-black bg-white px-3.5 py-2 border-2 border-[#1c1b1b] shadow-[2px_2px_0px_#1c1b1b] hover:bg-[#ffd84d] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center gap-1.5 cursor-pointer"
+                  className="font-code text-xs font-black bg-white dark:bg-[#191B20] text-[#1c1b1b] dark:text-[#F5F1E8] px-3.5 py-2 border-2 border-[#1c1b1b] dark:border-[#353842] shadow-[2px_2px_0px_#1c1b1b] dark:shadow-[2px_2px_0px_#000000] hover:bg-[#ffd84d] dark:hover:bg-[#353842] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center gap-1.5 cursor-pointer"
                 >
                   <Code2 className="w-3.5 h-3.5" />
                   <span>GitHub ↗</span>
@@ -213,16 +213,16 @@ export const Projects: React.FC = () => {
 
                 <button
                   onClick={() => handleOpenModal(proj)}
-                  className="font-code text-xs font-black bg-[#ffd84d] px-3.5 py-2 border-2 border-[#1c1b1b] shadow-[2px_2px_0px_#1c1b1b] hover:bg-[#ffe07e] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center gap-1.5 cursor-pointer"
+                  className="font-code text-xs font-black bg-[#ffd84d] dark:bg-[#FFD43B] text-[#1c1b1b] dark:text-[#101114] px-3.5 py-2 border-2 border-[#1c1b1b] dark:border-[#353842] shadow-[2px_2px_0px_#1c1b1b] dark:shadow-[2px_2px_0px_#000000] hover:bg-[#ffe07e] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center gap-1.5 cursor-pointer"
                 >
-                  <Terminal className="w-3.5 h-3.5 text-[#1c1b1b]" />
+                  <Terminal className="w-3.5 h-3.5 text-[#1c1b1b] dark:text-[#101114]" />
                   <span>View Code & Architecture 🔍</span>
                 </button>
 
                 {proj.liveUrl && (
                   <button
                     onClick={() => handleOpenModal(proj)}
-                    className="font-code text-xs font-black bg-[#bce9ff] px-3.5 py-2 border-2 border-[#1c1b1b] shadow-[2px_2px_0px_#1c1b1b] hover:bg-[#69c9f0] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center gap-1.5 cursor-pointer ml-auto"
+                    className="font-code text-xs font-black bg-[#bce9ff] dark:bg-[#55DFFF] text-[#1c1b1b] dark:text-[#101114] px-3.5 py-2 border-2 border-[#1c1b1b] dark:border-[#353842] shadow-[2px_2px_0px_#1c1b1b] dark:shadow-[2px_2px_0px_#000000] hover:bg-[#69c9f0] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center gap-1.5 cursor-pointer ml-auto"
                   >
                     <ExternalLink className="w-3.5 h-3.5" />
                     <span>Live Simulation ↗</span>
@@ -237,20 +237,20 @@ export const Projects: React.FC = () => {
       {/* Interactive Modal for Architecture and Code */}
       <AnimatePresence>
         {activeModalProject && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#1c1b1b]/70 backdrop-blur-xs">
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#1c1b1b]/70 dark:bg-[#000000]/80 backdrop-blur-xs">
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="bg-white border-[3.5px] border-[#1c1b1b] shadow-[8px_8px_0px_#1c1b1b] max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+              className="bg-white dark:bg-[#24262D] border-[3.5px] border-[#1c1b1b] dark:border-[#353842] shadow-[8px_8px_0px_#1c1b1b] dark:shadow-[8px_8px_0px_#000000] max-w-2xl w-full max-h-[90vh] overflow-y-auto"
             >
               {/* Window Header */}
-              <div className={`${activeModalProject.headerBg} p-3 border-b-2 border-[#1c1b1b] flex items-center justify-between sticky top-0 z-20`}>
+              <div className={`${activeModalProject.headerBg} p-3 border-b-2 border-[#1c1b1b] dark:border-[#353842] flex items-center justify-between sticky top-0 z-20`}>
                 <div className="flex items-center gap-2">
-                  <span className="w-3 h-3 rounded-full bg-[#ba1a1a] border border-[#1c1b1b]" />
-                  <span className="w-3 h-3 rounded-full bg-[#ffd84d] border border-[#1c1b1b]" />
-                  <span className="w-3 h-3 rounded-full bg-[#9be5c3] border border-[#1c1b1b]" />
-                  <span className="font-code text-xs font-black ml-2">
+                  <span className="w-3 h-3 rounded-full bg-[#ba1a1a] border border-[#1c1b1b] dark:border-[#353842]" />
+                  <span className="w-3 h-3 rounded-full bg-[#ffd84d] border border-[#1c1b1b] dark:border-[#353842]" />
+                  <span className="w-3 h-3 rounded-full bg-[#9be5c3] border border-[#1c1b1b] dark:border-[#353842]" />
+                  <span className="font-code text-xs font-black ml-2 text-[#1c1b1b]">
                     {activeModalProject.fileTitle} // INSPECTOR
                   </span>
                 </div>
@@ -259,47 +259,47 @@ export const Projects: React.FC = () => {
                     sfx.blip(500, 0.05);
                     setActiveModalProject(null);
                   }}
-                  className="p-1 bg-white border border-[#1c1b1b] shadow-[1.5px_1.5px_0px_#1c1b1b] hover:bg-[#ff7777] cursor-pointer"
+                  className="p-1 bg-white dark:bg-[#191B20] text-[#1c1b1b] dark:text-[#F5F1E8] border border-[#1c1b1b] dark:border-[#353842] shadow-[1.5px_1.5px_0px_#1c1b1b] dark:shadow-[1.5px_1.5px_0px_#000000] hover:bg-[#ff7777] cursor-pointer"
                 >
-                  <X className="w-4 h-4 text-[#1c1b1b]" />
+                  <X className="w-4 h-4 text-[#1c1b1b] dark:text-[#F5F1E8]" />
                 </button>
               </div>
 
               {/* Modal Content */}
               <div className="p-4 sm:p-6 space-y-4">
                 <div>
-                  <span className="font-code text-[11px] uppercase font-bold bg-[#ffd84d] px-2 py-0.5 border border-[#1c1b1b]">
+                  <span className="font-code text-[11px] uppercase font-bold bg-[#ffd84d] dark:bg-[#FFD43B] text-[#1c1b1b] dark:text-[#101114] px-2 py-0.5 border border-[#1c1b1b] dark:border-[#353842]">
                     {activeModalProject.badge}
                   </span>
-                  <h3 className="font-headline text-2xl font-black mt-2 text-[#1c1b1b]">
+                  <h3 className="font-headline text-2xl font-black mt-2 text-[#1c1b1b] dark:text-[#F5F1E8]">
                     {activeModalProject.title}
                   </h3>
-                  <p className="font-body text-sm text-[#1c1b1b] mt-1">
+                  <p className="font-body text-sm text-[#1c1b1b] dark:text-[#d0cbbf] mt-1">
                     {activeModalProject.desc}
                   </p>
                 </div>
 
                 {/* Architecture Blueprint Note */}
-                <div className="bg-[#bce9ff] p-3 border-2 border-[#1c1b1b] shadow-[2px_2px_0px_#1c1b1b]">
-                  <div className="font-code text-xs uppercase font-black text-[#006783] mb-1 flex items-center gap-1.5">
+                <div className="bg-[#bce9ff] dark:bg-[#191B20] p-3 border-2 border-[#1c1b1b] dark:border-[#55DFFF] shadow-[2px_2px_0px_#1c1b1b] dark:shadow-[2px_2px_0px_#000000]">
+                  <div className="font-code text-xs uppercase font-black text-[#006783] dark:text-[#55DFFF] mb-1 flex items-center gap-1.5">
                     <Layers className="w-4 h-4" />
                     Pipeline Architecture & Flow
                   </div>
-                  <p className="font-body text-xs text-[#1c1b1b] leading-relaxed">
+                  <p className="font-body text-xs text-[#1c1b1b] dark:text-[#F5F1E8] leading-relaxed">
                     {activeModalProject.architectureNotes}
                   </p>
                 </div>
 
                 {/* Code Snippet Terminal View */}
                 <div className="space-y-1.5">
-                  <div className="flex items-center justify-between font-code text-xs font-bold text-[#1c1b1b]">
+                  <div className="flex items-center justify-between font-code text-xs font-bold text-[#1c1b1b] dark:text-[#F5F1E8]">
                     <span className="flex items-center gap-1.5">
-                      <Terminal className="w-3.5 h-3.5 text-[#725c00]" />
+                      <Terminal className="w-3.5 h-3.5 text-[#725c00] dark:text-[#FFD43B]" />
                       Source Code Preview:
                     </span>
-                    <span className="text-[10px] text-[#4d4634]">PYTHON / SQL RUNTIME</span>
+                    <span className="text-[10px] text-[#4d4634] dark:text-[#d0cbbf]">PYTHON / SQL RUNTIME</span>
                   </div>
-                  <pre className="bg-[#1c1b1b] text-[#ffd84d] p-3.5 border-2 border-[#1c1b1b] font-code text-xs overflow-x-auto shadow-[inset_2px_2px_0px_rgba(0,0,0,0.5)]">
+                  <pre className="bg-[#1c1b1b] dark:bg-[#101114] text-[#ffd84d] dark:text-[#FFD43B] p-3.5 border-2 border-[#1c1b1b] dark:border-[#353842] font-code text-xs overflow-x-auto shadow-[inset_2px_2px_0px_rgba(0,0,0,0.5)]">
                     <code>{activeModalProject.codeSnippet}</code>
                   </pre>
                 </div>
@@ -307,20 +307,20 @@ export const Projects: React.FC = () => {
                 {/* Performance Metrics */}
                 <div className="grid grid-cols-3 gap-2">
                   {activeModalProject.metrics.map((m, i) => (
-                    <div key={i} className="p-2 bg-[#fcf9f8] border-2 border-[#1c1b1b] text-center">
-                      <div className="font-headline text-lg font-black text-[#725c00]">{m.value}</div>
-                      <div className="font-code text-[10px] uppercase font-bold text-[#4d4634]">{m.label}</div>
+                    <div key={i} className="p-2 bg-[#fcf9f8] dark:bg-[#191B20] border-2 border-[#1c1b1b] dark:border-[#353842] text-center">
+                      <div className="font-headline text-lg font-black text-[#725c00] dark:text-[#FFD43B]">{m.value}</div>
+                      <div className="font-code text-[10px] uppercase font-bold text-[#4d4634] dark:text-[#d0cbbf]">{m.label}</div>
                     </div>
                   ))}
                 </div>
 
                 {/* Modal Footer */}
-                <div className="flex justify-end gap-2 pt-3 border-t-2 border-dashed border-[#1c1b1b]">
+                <div className="flex justify-end gap-2 pt-3 border-t-2 border-dashed border-[#1c1b1b] dark:border-[#353842]">
                   <a
                     href={activeModalProject.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-code text-xs uppercase font-bold bg-[#ffd84d] text-[#1c1b1b] px-4 py-2 border-2 border-[#1c1b1b] shadow-[2px_2px_0px_#1c1b1b] hover:bg-[#ffe07e] flex items-center gap-1"
+                    className="font-code text-xs uppercase font-bold bg-[#ffd84d] dark:bg-[#FFD43B] text-[#1c1b1b] dark:text-[#101114] px-4 py-2 border-2 border-[#1c1b1b] dark:border-[#353842] shadow-[2px_2px_0px_#1c1b1b] dark:shadow-[2px_2px_0px_#000000] hover:bg-[#ffe07e] flex items-center gap-1"
                   >
                     <span>View on GitHub</span>
                     <ExternalLink className="w-3 h-3" />

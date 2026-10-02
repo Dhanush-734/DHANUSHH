@@ -47,7 +47,7 @@ export function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#fcf9f8] text-[#1c1b1b] flex flex-col font-body selection:bg-[#ffd84d] selection:text-[#1c1b1b]">
+    <div className="min-h-screen bg-[#fcf9f8] text-[#1c1b1b] dark:bg-[#101114] dark:text-[#F5F1E8] flex flex-col font-body selection:bg-[#ffd84d] selection:text-[#1c1b1b] dark:selection:bg-[#FFD43B] dark:selection:text-[#101114]">
       {/* Top Application Bar */}
       <Navbar soundEnabled={soundEnabled} setSoundEnabled={setSoundEnabled} />
 

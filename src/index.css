@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-primary: #725c00;
   --color-primary-container: #ffd84d;
@@ -32,12 +34,35 @@
   --font-headline: "Bricolage Grotesque", sans-serif;
   --font-body: "Space Grotesk", sans-serif;
   --font-code: "JetBrains Mono", monospace;
+
+  /* User Specified Dark Mode Theme Palette */
+  --color-dark-bg: #101114;
+  --color-dark-section: #191B20;
+  --color-dark-card: #24262D;
+  --color-dark-text: #F5F1E8;
+  --color-dark-accent: #FFD43B;
+  --color-dark-secondary: #55DFFF;
+  --color-dark-border: #353842;
 }
 
 :root {
   font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   color: #1c1b1b;
   background-color: #fcf9f8;
+}
+
+.dark {
+  color: #F5F1E8;
+  background-color: #101114;
+}
+
+/* Smooth transition when toggling themes */
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *::before,
+html.theme-transition *::after {
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.2s ease, fill 0.2s ease, stroke 0.2s ease, box-shadow 0.25s ease !important;
+  transition-delay: 0s !important;
 }
 
 /* Material Symbols font configuration */
@@ -61,13 +86,28 @@
   background-size: 8px 8px;
 }
 
+.dark .bg-halftone {
+  background-image: radial-gradient(#353842 1.2px, transparent 1.2px);
+  background-size: 8px 8px;
+}
+
 .bg-halftone-light {
   background-image: radial-gradient(rgba(28, 27, 27, 0.12) 1.2px, transparent 1.2px);
   background-size: 8px 8px;
 }
 
+.dark .bg-halftone-light {
+  background-image: radial-gradient(rgba(85, 223, 255, 0.08) 1.2px, transparent 1.2px);
+  background-size: 8px 8px;
+}
+
 .bg-halftone-yellow {
   background-image: radial-gradient(#725c00 1.2px, transparent 1.2px);
+  background-size: 8px 8px;
+}
+
+.dark .bg-halftone-yellow {
+  background-image: radial-gradient(#FFD43B 1.2px, transparent 1.2px);
   background-size: 8px 8px;
 }
 
@@ -79,6 +119,13 @@
   box-shadow: 1px 1px 3px rgba(0,0,0,0.18);
 }
 
+.dark .washi-tape {
+  background: rgba(255, 212, 59, 0.9);
+  border-left: 2px dashed rgba(16, 17, 20, 0.7);
+  border-right: 2px dashed rgba(16, 17, 20, 0.7);
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
 .washi-tape-blue {
   background: rgba(105, 201, 240, 0.9);
   border-left: 2px dashed rgba(28, 27, 27, 0.4);
@@ -86,11 +133,25 @@
   box-shadow: 1px 1px 3px rgba(0,0,0,0.18);
 }
 
+.dark .washi-tape-blue {
+  background: rgba(85, 223, 255, 0.85);
+  border-left: 2px dashed rgba(16, 17, 20, 0.7);
+  border-right: 2px dashed rgba(16, 17, 20, 0.7);
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
 .washi-tape-mint {
   background: rgba(155, 229, 195, 0.9);
   border-left: 2px dashed rgba(28, 27, 27, 0.4);
   border-right: 2px dashed rgba(28, 27, 27, 0.4);
   box-shadow: 1px 1px 3px rgba(0,0,0,0.18);
+}
+
+.dark .washi-tape-mint {
+  background: rgba(74, 222, 128, 0.85);
+  border-left: 2px dashed rgba(16, 17, 20, 0.7);
+  border-right: 2px dashed rgba(16, 17, 20, 0.7);
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
 /* Comic Speech Bubble Tail */
@@ -121,10 +182,22 @@
   z-index: 10;
 }
 
+.dark .comic-tail::after {
+  border-top-color: #353842;
+}
+.dark .comic-tail::before {
+  border-top-color: #191B20;
+}
+
 /* Neo-Brutalist Box Shadow Utility Classes */
 .comic-box {
   border: 2.5px solid #1c1b1b;
   box-shadow: 4px 4px 0px #1c1b1b;
+}
+
+.dark .comic-box {
+  border-color: #353842;
+  box-shadow: 4px 4px 0px #000000;
 }
 
 .comic-box-sm {
@@ -132,14 +205,29 @@
   box-shadow: 2px 2px 0px #1c1b1b;
 }
 
+.dark .comic-box-sm {
+  border-color: #353842;
+  box-shadow: 2px 2px 0px #000000;
+}
+
 .comic-box-lg {
   border: 3px solid #1c1b1b;
   box-shadow: 6px 6px 0px #1c1b1b;
 }
 
+.dark .comic-box-lg {
+  border-color: #353842;
+  box-shadow: 6px 6px 0px #000000;
+}
+
 .comic-box-xl {
   border: 3.5px solid #1c1b1b;
   box-shadow: 8px 8px 0px #1c1b1b;
+}
+
+.dark .comic-box-xl {
+  border-color: #353842;
+  box-shadow: 8px 8px 0px #000000;
 }
 
 /* Interactive mechanical click buttons */
@@ -161,6 +249,19 @@
   box-shadow: 1px 1px 0px #1c1b1b;
 }
 
+.dark .comic-btn-primary {
+  background-color: #FFD43B;
+  color: #101114;
+  border-color: #353842;
+  box-shadow: 4px 4px 0px #000000;
+}
+.dark .comic-btn-primary:hover {
+  box-shadow: 5.5px 5.5px 0px #000000;
+}
+.dark .comic-btn-primary:active {
+  box-shadow: 1px 1px 0px #000000;
+}
+
 .comic-btn-secondary {
   background-color: #ffffff;
   color: #1c1b1b;
@@ -177,6 +278,19 @@
 .comic-btn-secondary:active {
   transform: translate(2px, 2px);
   box-shadow: 1px 1px 0px #1c1b1b;
+}
+
+.dark .comic-btn-secondary {
+  background-color: #24262D;
+  color: #F5F1E8;
+  border-color: #353842;
+  box-shadow: 3px 3px 0px #000000;
+}
+.dark .comic-btn-secondary:hover {
+  box-shadow: 4.5px 4.5px 0px #000000;
+}
+.dark .comic-btn-secondary:active {
+  box-shadow: 1px 1px 0px #000000;
 }
 
 /* Vertical marquee animations */
@@ -235,4 +349,16 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #69c9f0;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #101114;
+  border-left: 2px solid #353842;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #FFD43B;
+  border: 2px solid #353842;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #55DFFF;
 }
