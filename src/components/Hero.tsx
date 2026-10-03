@@ -157,7 +157,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
         </a>
 
         <a
-          href="mailto:dhanush@example.com"
+          href="mailto:dhanushs2366@gmail.com"
           onClick={() => sfx.blip(600, 0.04)}
           className="font-code text-[11px] uppercase font-bold px-2.5 py-1 bg-white dark:bg-[#24262D] text-[#1c1b1b] dark:text-[#F5F1E8] border-2 border-[#1c1b1b] dark:border-[#353842] shadow-[2px_2px_0px_#1c1b1b] dark:shadow-[2px_2px_0px_#000000] flex items-center gap-1.5 hover:bg-[#ffd0ce] dark:hover:bg-[#353842] transition-colors"
         >

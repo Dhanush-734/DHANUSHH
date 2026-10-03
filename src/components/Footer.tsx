@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp, FileText, Sparkles } from 'lucide-react';
+import { ArrowUp, FileText, Sparkles, Mail } from 'lucide-react';
 import { sfx } from '../utils/sound';
 import { GithubIcon, LinkedinIcon } from './SocialIcons';
 
@@ -45,6 +45,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenResume }) => {
           >
             <LinkedinIcon className="w-3.5 h-3.5 text-[#69c9f0] dark:text-[#55DFFF]" />
             <span>LINKEDIN</span>
+          </a>
+          <a
+            href="mailto:dhanushs2366@gmail.com"
+            onClick={() => sfx.blip(500, 0.04)}
+            className="text-white/80 hover:text-[#ffd84d] dark:hover:text-[#FFD43B] transition-colors flex items-center gap-1.5"
+          >
+            <Mail className="w-3.5 h-3.5 text-[#ff7777]" />
+            <span>EMAIL</span>
           </a>
           <button
             onClick={() => {

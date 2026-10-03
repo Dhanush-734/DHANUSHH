@@ -66,7 +66,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                 DATA ENGINEER | DATA ANALYTICS | PYTHON DEVELOPER
               </p>
               <p className="font-body text-xs text-[#4d4634] dark:text-[#d0cbbf] mt-1">
-                Mangaluru, Karnataka, India • github.com/Dhanush-734 • linkedin.com/in/dhanush-s-970376392
+                Mangaluru, Karnataka, India • dhanushs2366@gmail.com • github.com/Dhanush-734 • linkedin.com/in/dhanush-s-970376392
               </p>
             </div>
             <div className="bg-[#ffd84d] dark:bg-[#FFD43B] text-[#1c1b1b] dark:text-[#101114] p-2 border-2 border-[#1c1b1b] dark:border-[#353842] font-headline text-xl font-black shadow-[2px_2px_0px_#1c1b1b] dark:shadow-[2px_2px_0px_#000000]">

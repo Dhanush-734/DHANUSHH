@@ -30,7 +30,7 @@ export const Postcard: React.FC = () => {
 
   const handleCopyEmail = () => {
     sfx.blip(900, 0.08);
-    navigator.clipboard.writeText('dhanush.data@example.com');
+    navigator.clipboard.writeText('dhanushs2366@gmail.com');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -58,7 +58,13 @@ export const Postcard: React.FC = () => {
                 DISPATCH A NOTE TO DHANUSH S
               </h3>
               <p className="font-body text-xs sm:text-sm text-[#4d4634] dark:text-[#d0cbbf]">
-                Looking for a data engineer, analytics developer, or full-stack collaborator?
+                Looking for a data engineer, analytics developer, or full-stack collaborator? Direct email:{' '}
+                <a
+                  href="mailto:dhanushs2366@gmail.com"
+                  className="font-code font-bold underline text-[#006783] dark:text-[#55DFFF] hover:text-[#ffd84d] transition-colors"
+                >
+                  dhanushs2366@gmail.com
+                </a>
               </p>
             </div>
 
@@ -67,7 +73,7 @@ export const Postcard: React.FC = () => {
               whileHover={{ rotate: 0, scale: 1.05 }}
               onClick={handleCopyEmail}
               className="w-20 h-24 border-2 border-dashed border-[#1c1b1b] dark:border-[#353842] bg-[#ffd84d] dark:bg-[#FFD43B] p-1.5 flex flex-col items-center justify-center text-center shadow-[3px_3px_0px_#1c1b1b] dark:shadow-[3px_3px_0px_#000000] rotate-2 cursor-pointer shrink-0"
-              title="Click to copy email address"
+              title="Click to copy: dhanushs2366@gmail.com"
             >
               <Send className="w-5 h-5 text-[#1c1b1b] dark:text-[#101114]" />
               <span className="font-code text-[10px] uppercase font-black leading-tight mt-1 text-[#1c1b1b] dark:text-[#101114]">
