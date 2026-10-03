@@ -36,6 +36,7 @@ export interface ProjectData {
   githubUrl?: string;
   liveUrl?: string;
   image: string;
+  altText: string;
   overview: string;
   problemStatement: string;
   solution: string;
@@ -70,15 +71,16 @@ export const Projects: React.FC = () => {
     {
       id: 'marketing-analytics',
       fileTitle: 'marketing_analytics_platform.tsx',
-      badge: 'ANALYTICS_PLATFORM',
+      badge: 'MARKETING_PLATFORM',
       headerBg: 'bg-[#ffd84d] text-[#1c1b1b]',
-      title: 'Marketing Analytics Platform',
+      title: 'Insight Innovators – Marketing Analytics',
       desc: 'An interactive multi-channel marketing analytics platform featuring ROI analysis, customer segmentation, email analytics, Snowflake integration and an AI-powered analytics assistant.',
       categories: ['Data Analytics', 'Full Stack Development'],
       tags: ['React', 'TypeScript', 'Python', 'Snowflake', 'Tailwind CSS', 'Recharts', 'Alteryx'],
       githubUrl: 'https://github.com/Dhanush-734/marketing_analytics',
       liveUrl: 'https://marketing-analytics-platform.onrender.com/',
-      image: '/projects/marketing-analytics.png',
+      image: '/assets/Neon%20Insight%20Innovators%20Dashboard(2).png',
+      altText: 'Neon Insight Innovators Dashboard - Multi-Channel Marketing Analytics Platform',
       overview: 'An interactive full-stack marketing analytics platform delivering multi-channel ROI visibility, customer segmentation, and campaign attribution backed by direct Snowflake Cloud Data Warehouse telemetry and an AI marketing copilot.',
       problemStatement: 'Marketing teams struggle to harmonize ad conversion data across disparate advertising channels (Google Ads, Meta, Email newsletters), resulting in inaccurate last-touch attribution, fragmented ROI metrics, and slow reporting cycles.',
       solution: 'Engineered a centralized analytics platform with Snowflake Cloud Data Warehouse integration (MARKETING_ETL schema), automated Alteryx data pipelines, multi-touch attribution modeling, and an INSIGHTS AI copilot for natural-language query analysis.',
@@ -132,15 +134,16 @@ ORDER BY roas DESC;`,
     {
       id: 'weather-prediction',
       fileTitle: 'weather_prediction_app.py',
-      badge: 'ML_FORECASTING',
+      badge: 'ML_DASHBOARD',
       headerBg: 'bg-[#69c9f0] text-[#1c1b1b]',
-      title: 'Weather Prediction & Analytics',
+      title: 'Weather Prediction Dashboard',
       desc: 'A machine learning-based weather analytics application featuring temperature prediction, exploratory data analysis, interactive visualizations and geospatial weather analysis.',
       categories: ['Data Analytics', 'Machine Learning'],
       tags: ['Python', 'Streamlit', 'Pandas', 'Scikit-learn', 'Plotly', 'Folium', 'Matplotlib'],
       githubUrl: 'https://github.com/Dhanush-734/WeatherPredictionProject',
       liveUrl: 'https://weatherpredictionproject-team9.streamlit.app/',
-      image: '/projects/weather-prediction.png',
+      image: '/assets/Neon%20Retro%20Weather%20Dashboard(1).png',
+      altText: 'Neon Retro Weather Dashboard - Machine Learning Temperature Forecasting & GIS',
       overview: 'An end-to-end Machine Learning web application designed to forecast temperatures, analyze meteorological features, and visualize spatial-temporal weather patterns interactively using Scikit-Learn regression pipelines and Folium maps.',
       problemStatement: 'Meteorologists and agricultural stakeholders require fast, accurate temperature predictions without deploying complex, computationally prohibitive numerical atmospheric simulation physics engines.',
       solution: 'Developed an end-to-end Machine Learning web application utilizing Scikit-learn regression pipelines trained on historical meteorological variables, integrated with interactive geospatial maps and responsive Streamlit sliders for on-demand inference.',
@@ -199,7 +202,8 @@ def predict_temperature(humidity, pressure, wind_speed):
       categories: ['Data Engineering'],
       tags: ['Python', 'Flask', 'PostgreSQL', 'OpenWeather API', 'Docker', 'Docker Compose', 'Plotly', 'Pandas'],
       githubUrl: 'https://github.com/Dhanush-734/weather-analytics-DE',
-      image: '/projects/weather-analytics-de.png',
+      image: '/assets/Neon%20Weather%20Analytics%20Pipeline(1).png',
+      altText: 'Neon Weather Analytics Pipeline - End-to-End ETL and PostgreSQL Dashboard',
       overview: 'A robust, containerized Data Engineering project that automates real-time weather data extraction from the OpenWeather API, executes an ETL pipeline, persists data into a PostgreSQL relational warehouse, and visualizes KPIs in an auto-refreshing dashboard.',
       problemStatement: 'Live meteorological feeds from weather stations and APIs are often volatile, inconsistent in format, and lack centralized storage for longitudinal analytics across multiple Indian cities.',
       solution: 'Engineered an automated Dockerized ETL pipeline that polls OpenWeather API endpoints, normalizes JSON payloads with Pandas, stores structured records into a relational PostgreSQL database, and serves live multi-city KPI dashboards via Flask and Plotly.',
@@ -267,6 +271,7 @@ def extract_and_load_weather(city_name, api_key, db_conn):
       tags: ['Python', 'Streamlit', 'MySQL', 'SQLGlot', 'NetworkX', 'PyVis', 'Plotly', 'Pandas'],
       githubUrl: 'https://github.com/Dhanush-734/dragonlineage',
       image: '/projects/dragonlineage.png',
+      altText: 'DragonLineage - Enterprise SQL Data Lineage & Blast Radius Analysis Platform',
       overview: 'DragonLineage is an enterprise SQL Data Lineage & Blast Radius Analysis platform that automatically parses SQL files into Abstract Syntax Trees (AST), extracts database dependencies, builds interactive lineage graphs, and predicts downstream schema change impacts.',
       problemStatement: 'In enterprise databases, schema modifications or table alterations frequently trigger cascading failures across downstream views, ETL jobs, reports, and dashboards without advance warning.',
       solution: 'Created DragonLineage, an enterprise SQL lineage platform that leverages SQLGlot to parse complex SQL DDL/DML statements into ASTs, stores dependency metadata in MySQL, generates interactive Directed Acyclic Graphs (DAGs) with NetworkX/PyVis, and calculates upstream/downstream blast radius before changes are deployed.',
@@ -320,16 +325,17 @@ def build_sql_lineage(sql_text):
       codeLanguage: 'PYTHON / AST'
     },
     {
-      id: 'keerthan-strength-lab',
-      fileTitle: 'keerthan_assessment.tsx',
-      badge: 'FREELANCE_APP',
+      id: 'gym-registration',
+      fileTitle: 'gym_registration_form.tsx',
+      badge: 'CLIENT_ASSESSMENT',
       headerBg: 'bg-[#ffd84d] text-[#1c1b1b]',
-      title: 'Keerthan Strength Lab – Client Assessment',
+      title: 'Gym Registration Form',
       desc: 'A professional digital client screening and fitness assessment application with interactive questionnaires, digital signatures, assessment documentation and PDF generation.',
       categories: ['Full Stack Development', 'Freelance Projects'],
       tags: ['React', 'TypeScript', 'Tailwind CSS', 'PDF Generation', 'Canvas Signature', 'Vercel'],
       liveUrl: 'https://keerthanstrengthlabreport.vercel.app/',
-      image: '/projects/keerthan-strength-lab.png',
+      image: '/assets/Retro%20Neon%20Gym%20Registration%20Banner(1).png',
+      altText: 'Retro Neon Gym Registration Banner - Keerthan Strength Lab Client Assessment',
       overview: 'A professional digital client screening and clinical fitness assessment application built for Keerthan Strength Lab. Includes medical readiness questionnaires, digital signatures, trainer anthropometric evaluations, and automated 4-page PDF dossier generation with native sharing via WhatsApp and AirDrop.',
       problemStatement: 'Fitness coaches and clinical assessment specialists used slow, error-prone paper questionnaires for medical history, PAR-Q clearances, body composition records, and physical signatures, leading to lost paperwork and friction in client onboarding.',
       solution: 'Designed and deployed a responsive, client-facing web assessment portal with guided multi-step questionnaires, HTML5 digital signature pad, clinical measurement records for trainers, and high-fidelity 4-page PDF dossier generation with native sharing via WhatsApp and AirDrop.',
@@ -387,14 +393,15 @@ export const generateAndShareDossier = async (data: ClientAssessmentPayload) => 
     {
       id: 'keerthan-mindfit',
       fileTitle: 'keerthan_mindfit.tsx',
-      badge: 'FREELANCE_SYSTEM',
+      badge: 'GYM_SYSTEM',
       headerBg: 'bg-[#69c9f0] text-[#1c1b1b]',
-      title: 'Keerthan MindFit',
+      title: 'Keerthan Strength Lab – Gym Management System',
       desc: 'A gym management web application with separate trainer and member entry points.',
       categories: ['Full Stack Development', 'Freelance Projects'],
       tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Role-Based Auth', 'Vercel'],
       liveUrl: 'https://keerthanmindfit.vercel.app/',
-      image: '/projects/keerthan-mindfit.png',
+      image: '/assets/Keerthan%20Strength%20Lab%20Pixel%20Gym%20Interface(1).png',
+      altText: 'Keerthan Strength Lab Pixel Gym Interface - Trainer & Member Portals',
       overview: 'Keerthan MindFit is a production gym management web application built with Next.js, featuring role-based portals for personal trainers (managing members, programs, and attendance) and athletes (reviewing plans, metrics, and video libraries).',
       problemStatement: 'A premier strength and conditioning facility needed a cohesive digital platform to manage trainers and athletes with role-segregated entryways, distinct workflows, and a sleek, branded gym aesthetic.',
       solution: 'Developed Keerthan MindFit, a Next.js web application featuring dedicated authentication portals for trainers (to manage members, training plans, and attendance) and members (to review customized plans, track progress metrics, and access exercise video libraries).',
@@ -516,7 +523,7 @@ export default function GatewayPortal() {
         <div className="inline-flex items-center gap-2 bg-white dark:bg-[#24262D] text-[#1c1b1b] dark:text-[#F5F1E8] px-3 py-1 border-2 border-[#1c1b1b] dark:border-[#353842] shadow-[3px_3px_0px_#1c1b1b] dark:shadow-[3px_3px_0px_#000000] rotate-1">
           <FolderGit2 className="w-4 h-4 text-[#725c00] dark:text-[#FFD43B]" />
           <h2 className="font-headline text-lg font-black">
-            Featured Projects & Engineering Work 🚀
+            Featured Projects &amp; Engineering Work 🚀
           </h2>
         </div>
         <div className="flex items-center gap-2">
@@ -567,7 +574,7 @@ export default function GatewayPortal() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.96 }}
               transition={{ duration: 0.35, delay: idx * 0.05 }}
-              className="bg-white dark:bg-[#24262D] border-[3px] border-[#1c1b1b] dark:border-[#353842] shadow-[5px_5px_0px_#1c1b1b] dark:shadow-[5px_5px_0px_#000000] overflow-hidden transition-colors"
+              className="bg-white dark:bg-[#24262D] border-[3px] border-[#1c1b1b] dark:border-[#353842] shadow-[5px_5px_0px_#1c1b1b] dark:shadow-[5px_5px_0px_#000000] hover:shadow-[0_0_24px_rgba(255,216,77,0.25)] dark:hover:shadow-[0_0_28px_rgba(85,223,255,0.25)] overflow-hidden transition-all duration-300"
             >
               {/* Retro Window Header */}
               <div className={`${proj.headerBg} px-3.5 py-2 border-b-[2.5px] border-[#1c1b1b] dark:border-[#353842] flex items-center justify-between`}>
@@ -588,26 +595,26 @@ export default function GatewayPortal() {
 
               {/* Card Main Body */}
               <div className="p-4 sm:p-5 space-y-4">
-                {/* Project Screenshot / Thumbnail with Loading Skeleton */}
+                {/* 16:9 Image Container with Subtle Neon Glow on Hover */}
                 <div
                   onClick={() => handleOpenModal(proj)}
-                  className="w-full h-52 sm:h-64 border-2 border-[#1c1b1b] dark:border-[#353842] overflow-hidden relative bg-[#f0eded] dark:bg-[#191B20] shadow-[3px_3px_0px_#1c1b1b] dark:shadow-[3px_3px_0px_#000000] cursor-pointer group"
+                  className="w-full aspect-[16/9] border-2 border-[#1c1b1b] dark:border-[#353842] overflow-hidden relative bg-[#101114] shadow-[3px_3px_0px_#1c1b1b] dark:shadow-[3px_3px_0px_#000000] cursor-pointer group hover:shadow-[0_0_22px_rgba(255,216,77,0.4)] dark:hover:shadow-[0_0_24px_rgba(85,223,255,0.4)] hover:border-[#ffd84d] dark:hover:border-[#55DFFF] transition-all duration-300 rounded-none"
                 >
                   {/* Loading State Skeleton */}
                   {!loadedImages[proj.id] && (
                     <div className="absolute inset-0 bg-[#e5e2e1] dark:bg-[#191B20] animate-pulse flex items-center justify-center">
                       <span className="font-code text-xs text-[#4d4634] dark:text-[#d0cbbf] font-bold">
-                        Loading preview...
+                        Loading pixel-art cover...
                       </span>
                     </div>
                   )}
 
                   <img
                     src={proj.image}
-                    alt={`${proj.title} Preview Screenshot`}
+                    alt={proj.altText}
                     loading="lazy"
                     onLoad={() => setLoadedImages((prev) => ({ ...prev, [proj.id]: true }))}
-                    className={`w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03] ${
+                    className={`w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03] ${
                       loadedImages[proj.id] ? 'opacity-100' : 'opacity-0'
                     }`}
                   />
@@ -616,7 +623,7 @@ export default function GatewayPortal() {
                   <div className="absolute bottom-2 right-2 opacity-90 group-hover:opacity-100 transition-opacity">
                     <span className="font-code text-[11px] font-black bg-[#ffd84d] dark:bg-[#FFD43B] text-[#1c1b1b] dark:text-[#101114] px-2.5 py-1 border border-[#1c1b1b] dark:border-[#353842] shadow-[2px_2px_0px_#1c1b1b] dark:shadow-[2px_2px_0px_#000000] flex items-center gap-1.5">
                       <Terminal className="w-3 h-3" />
-                      <span>Click to inspect specs 🔍</span>
+                      <span>View Project 🔍</span>
                     </span>
                   </div>
                 </div>
@@ -709,13 +716,13 @@ export default function GatewayPortal() {
                     </a>
                   )}
 
-                  {/* Project Details Modal Trigger */}
+                  {/* View Project / Details Modal Trigger */}
                   <button
                     onClick={() => handleOpenModal(proj)}
                     className="font-code text-xs font-black bg-[#ffd84d] dark:bg-[#FFD43B] text-[#1c1b1b] dark:text-[#101114] px-3.5 py-2 border-2 border-[#1c1b1b] dark:border-[#353842] shadow-[2px_2px_0px_#1c1b1b] dark:shadow-[2px_2px_0px_#000000] hover:bg-[#ffe07e] active:translate-x-[1.5px] active:translate-y-[1.5px] active:shadow-none transition-all flex items-center gap-1.5 cursor-pointer ml-auto"
                   >
                     <Terminal className="w-3.5 h-3.5 text-[#1c1b1b] dark:text-[#101114]" />
-                    <span>Project Details &amp; Architecture 🔍</span>
+                    <span>View Project &amp; Specs 🔍</span>
                   </button>
                 </div>
               </div>
@@ -814,22 +821,23 @@ export default function GatewayPortal() {
                   </p>
                 </div>
 
-                {/* Screenshot Container */}
+                {/* 16:9 Cover Artwork in Modal */}
                 <div className="space-y-1.5">
                   <div className="flex items-center justify-between font-code text-xs font-bold text-[#1c1b1b] dark:text-[#F5F1E8]">
                     <span className="flex items-center gap-1.5">
                       <Globe className="w-3.5 h-3.5 text-[#006783] dark:text-[#55DFFF]" />
-                      Verified Interface Preview:
+                      Custom Retro Neon Cover Artwork:
                     </span>
                     <span className="text-[10px] text-[#4d4634] dark:text-[#d0cbbf]">
-                      LIVE APPLICATION SCREENSHOT
+                      ORIGINAL 16:9 PIXEL ART
                     </span>
                   </div>
-                  <div className="w-full border-2 border-[#1c1b1b] dark:border-[#353842] overflow-hidden shadow-[4px_4px_0px_#1c1b1b] dark:shadow-[4px_4px_0px_#000000] bg-black">
+                  <div className="w-full aspect-[16/9] border-2 border-[#1c1b1b] dark:border-[#353842] overflow-hidden shadow-[4px_4px_0px_#1c1b1b] dark:shadow-[4px_4px_0px_#000000] bg-black">
                     <img
                       src={activeModalProject.image}
-                      alt={`${activeModalProject.title} Interface`}
-                      className="w-full h-auto max-h-[360px] object-cover object-top"
+                      alt={activeModalProject.altText}
+                      loading="lazy"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
                 </div>

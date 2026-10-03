@@ -118,7 +118,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
             <div className="text-xs space-y-1">
               <div className="font-code font-bold text-[#1c1b1b] dark:text-[#F5F1E8]">
-                1. Marketing Analytics Platform (React, TypeScript, Python, Snowflake, Tailwind CSS, Recharts)
+                1. Insight Innovators – Marketing Analytics (React, TypeScript, Python, Snowflake, Recharts)
               </div>
               <p className="font-body text-[#4d4634] dark:text-[#d0cbbf]">
                 Multi-channel ROI and ROAS attribution platform with customer segmentation, Snowflake warehouse integration, and AI-powered copilot.
@@ -127,7 +127,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
             <div className="text-xs space-y-1">
               <div className="font-code font-bold text-[#1c1b1b] dark:text-[#F5F1E8]">
-                2. Weather Prediction & Analytics (Python, Streamlit, Scikit-learn, Plotly, Folium)
+                2. Weather Prediction Dashboard (Python, Streamlit, Scikit-learn, Plotly, Folium)
               </div>
               <p className="font-body text-[#4d4634] dark:text-[#d0cbbf]">
                 Machine learning temperature forecasting application with exploratory data analysis, interactive geospatial maps, and real-time model inference.
@@ -154,7 +154,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
             <div className="text-xs space-y-1">
               <div className="font-code font-bold text-[#1c1b1b] dark:text-[#F5F1E8]">
-                5. Keerthan Strength Lab & MindFit Client Platforms (React, Next.js, TypeScript, Vercel)
+                5. Keerthan Strength Lab — Gym Registration & Management Systems (React, Next.js, Vercel)
               </div>
               <p className="font-body text-[#4d4634] dark:text-[#d0cbbf]">
                 Production freelance applications featuring digital screening, canvas signature capture, automated PDF dossier generation, and gym management portals.
