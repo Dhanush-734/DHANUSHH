@@ -70,7 +70,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               </p>
             </div>
             <div className="bg-[#ffd84d] dark:bg-[#FFD43B] text-[#1c1b1b] dark:text-[#101114] p-2 border-2 border-[#1c1b1b] dark:border-[#353842] font-headline text-xl font-black shadow-[2px_2px_0px_#1c1b1b] dark:shadow-[2px_2px_0px_#000000]">
-              MCA 2027
+              MCA (PRESENT)
             </div>
           </div>
 
@@ -83,7 +83,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
             <div className="space-y-2 text-xs">
               <div className="flex justify-between font-code font-bold">
                 <span>MCA (Master of Computer Applications) — Canara College, Mangaluru</span>
-                <span className="text-[#725c00] dark:text-[#FFD43B]">2025 - 2027</span>
+                <span className="text-[#725c00] dark:text-[#FFD43B]">2025 - PRESENT</span>
               </div>
               <p className="font-body text-[#4d4634] dark:text-[#d0cbbf]">Focus: Distributed Lakehouse Architectures, Cloud Platforms, Query Optimization.</p>
 

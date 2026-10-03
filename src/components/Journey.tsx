@@ -16,7 +16,7 @@ export const Journey: React.FC = () => {
     },
     {
       num: 2,
-      badge: '2025 - 2027',
+      badge: '2025 - PRESENT',
       badgeColor: 'text-[#006783] dark:text-[#55DFFF] bg-[#bce9ff] dark:bg-[#191B20]',
       nodeColor: 'bg-[#69c9f0] dark:bg-[#55DFFF] dark:text-[#101114]',
       title: 'MCA at Canara College',

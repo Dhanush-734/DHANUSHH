@@ -50,7 +50,7 @@ export const About: React.FC = () => {
 
           {/* Bio paragraph */}
           <p className="font-body text-base leading-relaxed text-[#1c1b1b] dark:text-[#F5F1E8]">
-            I am currently an MCA student at <strong className="underline decoration-[#ffd84d] dark:decoration-[#FFD43B] decoration-4 font-bold">Canara College</strong> (2025 - 2027), fueled by a relentless curiosity for distributed computing and efficient database architectures. My journey began with core computer application basics in BCA (2022 - 2025), and rapidly evolved into building automated data pipelines, writing performant SQL queries, and dissecting cloud data architectures.
+            I am currently an MCA student at <strong className="underline decoration-[#ffd84d] dark:decoration-[#FFD43B] decoration-4 font-bold">Canara College</strong> (2025 - PRESENT), fueled by a relentless curiosity for distributed computing and efficient database architectures. My journey began with core computer application basics in BCA (2022 - 2025), and rapidly evolved into building automated data pipelines, writing performant SQL queries, and dissecting cloud data architectures.
           </p>
 
           {/* Education Journey Polaroids */}
@@ -70,7 +70,7 @@ export const About: React.FC = () => {
               <h5 className="font-headline text-xl font-black mt-2 text-[#1c1b1b] dark:text-[#F5F1E8]">MCA (Master of Computer Applications)</h5>
               <p className="font-body text-xs text-[#4d4634] dark:text-[#d0cbbf] font-medium mt-0.5">Canara College, Mangaluru</p>
               <span className="inline-block mt-2.5 font-code text-[11px] font-bold bg-[#ffd84d] dark:bg-[#FFD43B] text-[#1c1b1b] dark:text-[#101114] px-2 py-0.5 border border-[#1c1b1b] dark:border-[#353842] shadow-[1px_1px_0px_#1c1b1b] dark:shadow-[1px_1px_0px_#000000]">
-                CURRENTLY PURSUING (2025 - 2027)
+                CURRENTLY PURSUING (2025 - PRESENT)
               </span>
             </motion.div>
 

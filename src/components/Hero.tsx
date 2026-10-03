@@ -234,7 +234,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
             </span>
 
             <span className="font-code text-xs text-[#4d4634] dark:text-[#d0cbbf] font-bold">
-              CANARA_COLLEGE // MCA_2025-2027
+              CANARA_COLLEGE // MCA_PRESENT
             </span>
           </div>
         </div>
