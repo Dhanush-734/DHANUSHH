@@ -335,6 +335,70 @@ html.theme-transition *::after {
   animation-play-state: paused;
 }
 
+/* Horizontal Left to Right Marquee Animation */
+@keyframes marquee-ltr {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee-ltr {
+  animation: marquee-ltr 28s linear infinite;
+  will-change: transform;
+}
+
+.marquee-wrapper:hover .animate-marquee-ltr {
+  animation-play-state: paused;
+}
+
+/* Retro Grid Background Pattern */
+.bg-retro-grid {
+  background-color: #fbf9f4;
+  background-image: 
+    linear-gradient(to right, rgba(28, 27, 27, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(28, 27, 27, 0.07) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.dark .bg-retro-grid {
+  background-color: #191B20;
+  background-image: 
+    linear-gradient(to right, rgba(245, 241, 232, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(245, 241, 232, 0.07) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Floating animation for toolkit icons */
+@keyframes retro-float-icon {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-retro-float-icon {
+  animation: retro-float-icon 3s ease-in-out infinite;
+}
+
+/* Pixel Car driving continuously along bottom track */
+@keyframes car-drive-loop {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: calc(100% + 20px);
+  }
+}
+
+.animate-car-drive {
+  animation: car-drive-loop 12s linear infinite;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
