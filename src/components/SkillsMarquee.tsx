@@ -8,13 +8,13 @@ export interface ToolItem {
   accentBg: string;
   accentBorder: string;
   badgeContent: React.ReactNode;
-  icon: React.ReactNode;
+  image: string;
 }
 
 export const SkillsMarquee: React.FC = () => {
   const [activeTooltip, setActiveTooltip] = useState<string | null>(null);
 
-  // The STRICT 11 tools requested by the user
+  // The STRICT 11 tools with high-definition realistic 3D / glossy logos
   const tools: ToolItem[] = [
     {
       id: 'python',
@@ -22,18 +22,7 @@ export const SkillsMarquee: React.FC = () => {
       accentBg: 'bg-[#ffd84d]',
       accentBorder: '#ffd84d',
       badgeContent: <span className="text-[#ffd84d] font-code font-black text-[10px]">&gt;_</span>,
-      icon: (
-        <svg className="w-10 h-10 select-none" viewBox="0 0 128 128" fill="none">
-          <path
-            fill="#387eb8"
-            d="M63.7 7.6c-26.6 0-25 11.5-25 11.5l.03 11.9h25.4v3.6H29.1S12 32.7 12 59.4c0 26.6 15 25.7 15 25.7h8.9v-12.5s-.5-15 14.8-15h25.2s14.3.2 14.3-14V21.8s1.6-14.2-26.5-14.2zM52.4 17.5c2.6 0 4.7 2.1 4.7 4.7s-2.1 4.7-4.7 4.7-4.7-2.1-4.7-4.7 2.1-4.7 4.7-4.7z"
-          />
-          <path
-            fill="#ffe052"
-            d="M64.3 120.4c26.6 0 25-11.5 25-11.5l-.03-11.9H63.9v-3.6h35s17.1 1.9 17.1-24.8c0-26.6-15-25.7-15-25.7h-8.9v12.5s.5 15-14.8 15H52.1s-14.3-.2-14.3 14v21.8s-1.6 14.2 26.5 14.2zm11.3-9.9c-2.6 0-4.7-2.1-4.7-4.7s2.1-4.7 4.7-4.7 4.7 2.1 4.7 4.7-2.1 4.7-4.7 4.7z"
-          />
-        </svg>
-      )
+      image: '/assets/tools/realistic_python.png'
     },
     {
       id: 'sql',
@@ -41,16 +30,7 @@ export const SkillsMarquee: React.FC = () => {
       accentBg: 'bg-[#69c9f0]',
       accentBorder: '#69c9f0',
       badgeContent: <span className="text-[#55DFFF] font-code font-black text-[9px]">SQL</span>,
-      icon: (
-        <svg className="w-10 h-10 select-none" viewBox="0 0 64 64" fill="none">
-          <ellipse cx="32" cy="14" rx="21" ry="8" fill="#55DFFF" stroke="#1c1b1b" strokeWidth="2.5" />
-          <path d="M11 14v15c0 4.4 9.4 8 21 8s21-3.6 21-8V14" fill="#008cb4" stroke="#1c1b1b" strokeWidth="2.5" />
-          <ellipse cx="32" cy="29" rx="21" ry="8" fill="#55DFFF" stroke="#1c1b1b" strokeWidth="2.5" />
-          <path d="M11 29v16c0 4.4 9.4 8 21 8s21-3.6 21-8V29" fill="#006783" stroke="#1c1b1b" strokeWidth="2.5" />
-          <ellipse cx="32" cy="45" rx="21" ry="8" fill="#55DFFF" stroke="#1c1b1b" strokeWidth="2.5" />
-          <path d="M16 14c0 1.5 7 3 16 3s16-1.5 16-3" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.6" />
-        </svg>
-      )
+      image: '/assets/tools/realistic_sql.png'
     },
     {
       id: 'airflow',
@@ -65,15 +45,7 @@ export const SkillsMarquee: React.FC = () => {
           <path d="M6 8.5v4l6 3m6-7v4l-6 3" strokeLinecap="round" />
         </svg>
       ),
-      icon: (
-        <svg className="w-10 h-10 select-none" viewBox="0 0 64 64" fill="none">
-          <path d="M32 10v22H10c0-12.2 9.8-22 22-22z" fill="#017CEE" stroke="#1c1b1b" strokeWidth="2.2" />
-          <path d="M54 32H32V10c12.2 0 22 9.8 22 22z" fill="#00AD46" stroke="#1c1b1b" strokeWidth="2.2" />
-          <path d="M32 54V32h22c0 12.2-9.8 22-22 22z" fill="#E43921" stroke="#1c1b1b" strokeWidth="2.2" />
-          <path d="M10 32h22v22c-12.2 0-22-9.8-22-22z" fill="#133857" stroke="#1c1b1b" strokeWidth="2.2" />
-          <circle cx="32" cy="32" r="5" fill="#ffd84d" stroke="#1c1b1b" strokeWidth="2" />
-        </svg>
-      )
+      image: '/assets/tools/realistic_airflow.png'
     },
     {
       id: 'docker',
@@ -88,25 +60,7 @@ export const SkillsMarquee: React.FC = () => {
           <line x1="3" y1="12" x2="21" y2="12" />
         </svg>
       ),
-      icon: (
-        <svg className="w-10 h-10 select-none" viewBox="0 0 64 64" fill="none">
-          <path
-            d="M56 34c-1.5-5-5-8-10-8h-3v-3h-5v3h-3v-3h-5v3h-3v-3h-5v3h-3v-3H14v8c-6 2-8 7-8 11 0 7 6 11 15 11 18 0 28-8 32-15 1-1 3-3 3-5z"
-            fill="#2496ED"
-            stroke="#1c1b1b"
-            strokeWidth="2.2"
-          />
-          <rect x="15" y="24" width="4.5" height="4.5" fill="#7ad8ff" stroke="#1c1b1b" strokeWidth="1.2" />
-          <rect x="21" y="24" width="4.5" height="4.5" fill="#7ad8ff" stroke="#1c1b1b" strokeWidth="1.2" />
-          <rect x="27" y="24" width="4.5" height="4.5" fill="#7ad8ff" stroke="#1c1b1b" strokeWidth="1.2" />
-          <rect x="21" y="18" width="4.5" height="4.5" fill="#ffffff" stroke="#1c1b1b" strokeWidth="1.2" />
-          <rect x="27" y="18" width="4.5" height="4.5" fill="#ffffff" stroke="#1c1b1b" strokeWidth="1.2" />
-          <rect x="33" y="24" width="4.5" height="4.5" fill="#7ad8ff" stroke="#1c1b1b" strokeWidth="1.2" />
-          <rect x="33" y="18" width="4.5" height="4.5" fill="#ffffff" stroke="#1c1b1b" strokeWidth="1.2" />
-          <circle cx="48" cy="36" r="1.5" fill="#ffffff" stroke="#1c1b1b" strokeWidth="1" />
-          <path d="M54 26c4-3 7-2 8-1-1 3-3 6-6 7" stroke="#1c1b1b" strokeWidth="2" strokeLinecap="round" />
-        </svg>
-      )
+      image: '/assets/tools/realistic_docker.png'
     },
     {
       id: 'cloud',
@@ -118,23 +72,7 @@ export const SkillsMarquee: React.FC = () => {
           <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
         </svg>
       ),
-      icon: (
-        <svg className="w-10 h-10 select-none" viewBox="0 0 64 64" fill="none">
-          <path
-            d="M18 44h28a12 12 0 0 0 4-23.3 16 16 0 0 0-30-2.4A11 11 0 0 0 18 44z"
-            fill="url(#cloudGrad)"
-            stroke="#1c1b1b"
-            strokeWidth="2.5"
-          />
-          <path d="M22 27a10 10 0 0 1 18-4" stroke="white" strokeWidth="2.2" strokeLinecap="round" opacity="0.75" />
-          <defs>
-            <linearGradient id="cloudGrad" x1="10" y1="18" x2="52" y2="44" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#7ad8ff" />
-              <stop offset="1" stopColor="#006783" />
-            </linearGradient>
-          </defs>
-        </svg>
-      )
+      image: '/assets/tools/realistic_cloud.png'
     },
     {
       id: 'alteryx',
@@ -148,24 +86,7 @@ export const SkillsMarquee: React.FC = () => {
           <line x1="9" y1="12" x2="15" y2="12" />
         </svg>
       ),
-      icon: (
-        <svg className="w-10 h-10 select-none" viewBox="0 0 64 64" fill="none">
-          <circle cx="32" cy="32" r="22" fill="#004C97" stroke="#1c1b1b" strokeWidth="2.5" />
-          <circle cx="32" cy="32" r="18" fill="#0072CE" />
-          <text
-            x="32"
-            y="43"
-            textAnchor="middle"
-            fill="white"
-            fontFamily="'Space Grotesk', sans-serif"
-            fontWeight="900"
-            fontSize="32"
-          >
-            a
-          </text>
-          <circle cx="43" cy="21" r="3" fill="#ffd84d" stroke="#1c1b1b" strokeWidth="1.5" />
-        </svg>
-      )
+      image: '/assets/tools/realistic_alteryx.png'
     },
     {
       id: 'snowflake',
@@ -179,19 +100,7 @@ export const SkillsMarquee: React.FC = () => {
           <line x1="3.3" y1="17" x2="20.7" y2="7" />
         </svg>
       ),
-      icon: (
-        <svg className="w-10 h-10 select-none" viewBox="0 0 64 64" fill="none">
-          <g stroke="#29B5E8" strokeWidth="3" strokeLinecap="round">
-            <line x1="32" y1="8" x2="32" y2="56" />
-            <line x1="11.2" y1="20" x2="52.8" y2="44" />
-            <line x1="11.2" y1="44" x2="52.8" y2="20" />
-            <path d="M26 14l6 6 6-6M26 50l6-6 6 6" />
-            <path d="M16 28l8 2-2 8M48 36l-8-2 2-8" />
-            <path d="M22 40l2-8 8 2M42 24l-2 8-8-2" />
-          </g>
-          <circle cx="32" cy="32" r="4.5" fill="#29B5E8" stroke="#1c1b1b" strokeWidth="2" />
-        </svg>
-      )
+      image: '/assets/tools/realistic_snowflake.png'
     },
     {
       id: 'excel',
@@ -205,27 +114,7 @@ export const SkillsMarquee: React.FC = () => {
           <line x1="6" y1="20" x2="6" y2="14" />
         </svg>
       ),
-      icon: (
-        <svg className="w-10 h-10 select-none" viewBox="0 0 64 64" fill="none">
-          <rect x="18" y="14" width="34" height="36" rx="2" fill="#107C41" stroke="#1c1b1b" strokeWidth="2.2" />
-          <rect x="24" y="20" width="22" height="24" fill="#185C37" />
-          <line x1="24" y1="28" x2="46" y2="28" stroke="#33C481" strokeWidth="1.5" />
-          <line x1="24" y1="36" x2="46" y2="36" stroke="#33C481" strokeWidth="1.5" />
-          <line x1="35" y1="20" x2="35" y2="44" stroke="#33C481" strokeWidth="1.5" />
-          <rect x="10" y="20" width="18" height="24" rx="2" fill="#0E5C2F" stroke="#1c1b1b" strokeWidth="2.2" />
-          <text
-            x="19"
-            y="38"
-            textAnchor="middle"
-            fill="white"
-            fontFamily="'JetBrains Mono', monospace"
-            fontWeight="900"
-            fontSize="18"
-          >
-            X
-          </text>
-        </svg>
-      )
+      image: '/assets/tools/realistic_excel.png'
     },
     {
       id: 'powerbi',
@@ -241,14 +130,7 @@ export const SkillsMarquee: React.FC = () => {
           <line x1="15" y1="3" x2="15" y2="21" />
         </svg>
       ),
-      icon: (
-        <svg className="w-10 h-10 select-none" viewBox="0 0 64 64" fill="none">
-          <rect x="14" y="34" width="9" height="18" rx="1.5" fill="#F2C811" stroke="#1c1b1b" strokeWidth="2" />
-          <rect x="27" y="22" width="9" height="30" rx="1.5" fill="#E8B80D" stroke="#1c1b1b" strokeWidth="2" />
-          <rect x="40" y="12" width="9" height="40" rx="1.5" fill="#DDA800" stroke="#1c1b1b" strokeWidth="2" />
-          <path d="M15 35h7M28 23h7M41 13h7" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.6" />
-        </svg>
-      )
+      image: '/assets/tools/realistic_powerbi.png'
     },
     {
       id: 'flask',
@@ -256,25 +138,7 @@ export const SkillsMarquee: React.FC = () => {
       accentBg: 'bg-[#ff7777]',
       accentBorder: '#ff7777',
       badgeContent: <span className="text-white font-code font-black text-[9px]">&lt;/&gt;</span>,
-      icon: (
-        <svg className="w-10 h-10 select-none" viewBox="0 0 64 64" fill="none">
-          <path
-            d="M26 10h12M29 10v12L14 46c-2 3.5.5 8 4.5 8h27c4 0 6.5-4.5 4.5-8L35 22V10"
-            stroke="#1c1b1b"
-            strokeWidth="3"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M17.5 44L24 33c3 2 6 2 9 0 3-2 6-2 9 0l6.5 11c1.5 2.5 0 6-3 6H20.5c-3 0-4.5-3.5-3-6z"
-            fill="#FF4D4D"
-            stroke="#1c1b1b"
-            strokeWidth="2"
-          />
-          <circle cx="28" cy="42" r="2" fill="white" opacity="0.6" />
-          <circle cx="36" cy="38" r="1.5" fill="white" opacity="0.6" />
-        </svg>
-      )
+      image: '/assets/tools/realistic_flask.png'
     },
     {
       id: 'streamlit',
@@ -289,19 +153,7 @@ export const SkillsMarquee: React.FC = () => {
           <rect x="14" y="14" width="7" height="7" rx="1" />
         </svg>
       ),
-      icon: (
-        <svg className="w-10 h-10 select-none" viewBox="0 0 64 64" fill="none">
-          <path
-            d="M32 14l10 16 12-8-6 26H16l-6-26 12 8 10-16z"
-            fill="#FF4B4B"
-            stroke="#1c1b1b"
-            strokeWidth="2.5"
-            strokeLinejoin="round"
-          />
-          <path d="M32 14v34M22 22l10 26M42 22L32 48" stroke="#B81414" strokeWidth="2" />
-          <path d="M16 48l16-34 16 34" stroke="#1c1b1b" strokeWidth="1.5" opacity="0.4" />
-        </svg>
-      )
+      image: '/assets/tools/realistic_streamlit.png'
     }
   ];
 
@@ -385,14 +237,19 @@ export const SkillsMarquee: React.FC = () => {
                   />
 
                   {/* Card Center: Icon & Title */}
-                  <div className="pt-3.5 px-2 flex flex-col items-center justify-center flex-1">
-                    {/* Floating tool icon */}
-                    <div className="animate-retro-float-icon group-hover:scale-110 transition-transform duration-300">
-                      {tool.icon}
+                  <div className="pt-3 px-2 flex flex-col items-center justify-center flex-1">
+                    {/* Realistic 3D floating tool logo */}
+                    <div className="h-12 flex items-center justify-center animate-retro-float-icon group-hover:scale-115 transition-transform duration-300">
+                      <img
+                        src={tool.image}
+                        alt={`${tool.name} Logo`}
+                        loading="lazy"
+                        className="max-h-11 max-w-[54px] object-contain drop-shadow-[0_2.5px_4px_rgba(0,0,0,0.18)] select-none"
+                      />
                     </div>
 
                     {/* Tool Name */}
-                    <span className="font-code text-[11px] sm:text-xs font-black tracking-wider text-[#1c1b1b] dark:text-[#F5F1E8] text-center mt-2.5 leading-tight">
+                    <span className="font-code text-[11px] sm:text-xs font-black tracking-wider text-[#1c1b1b] dark:text-[#F5F1E8] text-center mt-2 leading-tight">
                       {tool.name}
                     </span>
                   </div>
