@@ -55,10 +55,10 @@ export const Postcard: React.FC = () => {
                 PAR AVION / AIR MAIL ✈️
               </span>
               <h3 className="font-headline text-2xl font-black mt-1 text-[#1c1b1b] dark:text-[#F5F1E8]">
-                DISPATCH A NOTE TO DHANUSH
+                DISPATCH A NOTE TO DHANUSH S
               </h3>
               <p className="font-body text-xs sm:text-sm text-[#4d4634] dark:text-[#d0cbbf]">
-                Looking for a full-time data engineer, pipeline collaborator, or tech brainstorm?
+                Looking for a data engineer, analytics developer, or full-stack collaborator?
               </p>
             </div>
 
@@ -71,7 +71,7 @@ export const Postcard: React.FC = () => {
             >
               <Send className="w-5 h-5 text-[#1c1b1b] dark:text-[#101114]" />
               <span className="font-code text-[10px] uppercase font-black leading-tight mt-1 text-[#1c1b1b] dark:text-[#101114]">
-                DHANUSH<br />DEV
+                DHANUSH S<br />DEV
               </span>
               <span className="text-[8px] font-code bg-white dark:bg-[#191B20] text-[#1c1b1b] dark:text-[#F5F1E8] px-1 border border-[#1c1b1b] dark:border-[#353842] mt-1">
                 AIR_POST

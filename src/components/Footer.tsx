@@ -21,13 +21,13 @@ export const Footer: React.FC<FooterProps> = ({ onOpenResume }) => {
           <span className="bg-[#ffd84d] dark:bg-[#FFD43B] text-[#1c1b1b] dark:text-[#101114] px-2 py-0.5 border-2 border-white dark:border-[#353842] font-black shadow-[2px_2px_0px_#ffffff] dark:shadow-[2px_2px_0px_#000000]">
             D.
           </span>
-          <span>DHANUSH • DATA DEV</span>
+          <span>DHANUSH S • DATA ENGINEER | DATA ANALYTICS | PYTHON DEVELOPER</span>
         </div>
 
         {/* Links */}
         <div className="flex flex-wrap justify-center gap-6 font-code text-xs tracking-wider uppercase">
           <a
-            href="https://github.com"
+            href="https://github.com/Dhanush-734/"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => sfx.blip(500, 0.04)}
@@ -37,7 +37,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenResume }) => {
             <span>GITHUB</span>
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/dhanush-s-970376392/"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => sfx.blip(500, 0.04)}
@@ -68,7 +68,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenResume }) => {
 
         {/* Philosophy */}
         <p className="font-code text-xs tracking-wider uppercase text-[#ffd84d] dark:text-[#FFD43B] font-bold">
-          BUILD → LEARN → GROW → REPEAT • © DHANUSH 2025 • CRAFTED WITH INK &amp; DATA
+          BUILD → LEARN → GROW → REPEAT • © DHANUSH S 2026 • CRAFTED WITH INK &amp; DATA
         </p>
 
         {/* Back to Top */}

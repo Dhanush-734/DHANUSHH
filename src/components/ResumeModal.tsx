@@ -61,12 +61,12 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
           {/* Header */}
           <div className="border-b-2 border-[#1c1b1b] dark:border-[#353842] pb-4 flex flex-wrap justify-between items-start gap-4">
             <div>
-              <h2 className="font-headline text-3xl font-black text-[#1c1b1b] dark:text-[#F5F1E8]">DHANUSH</h2>
+              <h2 className="font-headline text-3xl font-black text-[#1c1b1b] dark:text-[#F5F1E8]">DHANUSH S</h2>
               <p className="font-code text-xs uppercase font-extrabold text-[#725c00] dark:text-[#FFD43B] mt-0.5">
-                ASPIRING DATA ENGINEER • CLOUD & DATA ENTHUSIAST
+                DATA ENGINEER | DATA ANALYTICS | PYTHON DEVELOPER
               </p>
               <p className="font-body text-xs text-[#4d4634] dark:text-[#d0cbbf] mt-1">
-                Mangaluru, Karnataka, India • dhanush.data@example.com • linkedin.com/in/dhanush-data
+                Mangaluru, Karnataka, India • github.com/Dhanush-734 • linkedin.com/in/dhanush-s-970376392
               </p>
             </div>
             <div className="bg-[#ffd84d] dark:bg-[#FFD43B] text-[#1c1b1b] dark:text-[#101114] p-2 border-2 border-[#1c1b1b] dark:border-[#353842] font-headline text-xl font-black shadow-[2px_2px_0px_#1c1b1b] dark:shadow-[2px_2px_0px_#000000]">
@@ -102,10 +102,10 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               Technical Toolkit
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-code">
-              <div><strong>Languages:</strong> Python, SQL, Java, Bash, JavaScript</div>
-              <div><strong>Data Eng:</strong> Apache Airflow, PostgreSQL, Snowflake, PySpark, dbt</div>
-              <div><strong>Cloud & DevOps:</strong> AWS (S3, EC2), MS Fabric, Docker, Git, CI/CD</div>
-              <div><strong>Analytics:</strong> Power BI, Pandas, NumPy, Scikit-Learn, Streamlit</div>
+              <div><strong>Languages:</strong> Python, SQL, Java, Bash, JavaScript, TypeScript</div>
+              <div><strong>Data Eng:</strong> Apache Airflow, PostgreSQL, Snowflake, PySpark, dbt, SQLGlot</div>
+              <div><strong>Cloud & DevOps:</strong> AWS (S3, EC2), MS Fabric, Docker, Docker Compose, Git</div>
+              <div><strong>Analytics & Web:</strong> Power BI, Pandas, Scikit-Learn, Streamlit, React, Next.js, Plotly</div>
             </div>
           </div>
 
@@ -113,33 +113,51 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
           <div className="space-y-2.5">
             <h3 className="font-headline text-base font-black uppercase text-[#1c1b1b] dark:text-[#F5F1E8] flex items-center gap-1.5 border-b border-dashed border-[#1c1b1b] dark:border-[#353842] pb-1">
               <Code2 className="w-4 h-4 text-[#725c00] dark:text-[#FFD43B]" />
-              Key Data Projects
+              Featured Projects & Engineering Work
             </h3>
 
             <div className="text-xs space-y-1">
               <div className="font-code font-bold text-[#1c1b1b] dark:text-[#F5F1E8]">
-                1. Weather Prediction & Analytics Dashboard (Python, Scikit-Learn, Streamlit)
+                1. Marketing Analytics Platform (React, TypeScript, Python, Snowflake, Tailwind CSS, Recharts)
               </div>
               <p className="font-body text-[#4d4634] dark:text-[#d0cbbf]">
-                Streamlined sensor parsing pipeline with Random Forest rainfall classification achieving 92.4% accuracy.
+                Multi-channel ROI and ROAS attribution platform with customer segmentation, Snowflake warehouse integration, and AI-powered copilot.
               </p>
             </div>
 
             <div className="text-xs space-y-1">
               <div className="font-code font-bold text-[#1c1b1b] dark:text-[#F5F1E8]">
-                2. Marketing Campaign & Multi-Channel ROI Analytics (SQL, Power BI, PostgreSQL)
+                2. Weather Prediction & Analytics (Python, Streamlit, Scikit-learn, Plotly, Folium)
               </div>
               <p className="font-body text-[#4d4634] dark:text-[#d0cbbf]">
-                Attributed cross-channel touchpoint conversions, saving 18% customer acquisition costs via actionable dashboard.
+                Machine learning temperature forecasting application with exploratory data analysis, interactive geospatial maps, and real-time model inference.
               </p>
             </div>
 
             <div className="text-xs space-y-1">
               <div className="font-code font-bold text-[#1c1b1b] dark:text-[#F5F1E8]">
-                3. Automated ETL Lakehouse Orchestrator (Apache Airflow, PostgreSQL, Docker)
+                3. Weather Analytics Data Engineering (Python, Flask, PostgreSQL, Docker, OpenWeather API)
               </div>
               <p className="font-body text-[#4d4634] dark:text-[#d0cbbf]">
-                Engineered scheduled batch ingestion pipeline processing 15,000 rec/sec with automated schema reconciliation.
+                Automated API extraction, ETL ingestion pipeline, relational PostgreSQL data warehouse, and multi-city Plotly dashboard.
+              </p>
+            </div>
+
+            <div className="text-xs space-y-1">
+              <div className="font-code font-bold text-[#1c1b1b] dark:text-[#F5F1E8]">
+                4. DragonLineage — SQL Lineage & Blast Radius (Python, Streamlit, MySQL, SQLGlot, NetworkX)
+              </div>
+              <p className="font-body text-[#4d4634] dark:text-[#d0cbbf]">
+                Enterprise SQL AST parser mapping table and view dependencies with predictive blast radius calculations and PyVis interactive graphs.
+              </p>
+            </div>
+
+            <div className="text-xs space-y-1">
+              <div className="font-code font-bold text-[#1c1b1b] dark:text-[#F5F1E8]">
+                5. Keerthan Strength Lab & MindFit Client Platforms (React, Next.js, TypeScript, Vercel)
+              </div>
+              <p className="font-body text-[#4d4634] dark:text-[#d0cbbf]">
+                Production freelance applications featuring digital screening, canvas signature capture, automated PDF dossier generation, and gym management portals.
               </p>
             </div>
           </div>

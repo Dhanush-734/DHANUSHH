@@ -35,9 +35,9 @@ export const About: React.FC = () => {
                 D
               </span>
               <div>
-                <h4 className="font-headline text-xl font-black text-[#1c1b1b] dark:text-[#F5F1E8]">DHANUSH</h4>
+                <h4 className="font-headline text-xl font-black text-[#1c1b1b] dark:text-[#F5F1E8]">DHANUSH S</h4>
                 <p className="font-code text-xs uppercase text-[#725c00] dark:text-[#FFD43B] font-black tracking-wide">
-                  DATA DEV • MCA STUDENT
+                  DATA ENGINEER • DATA ANALYTICS • PYTHON DEV
                 </p>
               </div>
             </div>

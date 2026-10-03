@@ -68,14 +68,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
             className="bg-[#ffd84d] dark:bg-[#FFD43B] dark:text-[#101114] px-3 py-0.5 border-[3px] border-[#1c1b1b] dark:border-[#353842] shadow-[4.5px_4.5px_0px_#1c1b1b] dark:shadow-[4.5px_4.5px_0px_#000000] inline-block -rotate-1 hover:rotate-1 transition-transform cursor-pointer"
             onClick={triggerHeroBurst}
           >
-            Dhanush.
+            Dhanush S.
           </span>
         </h1>
 
         <div className="inline-block">
           <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#bce9ff] dark:bg-[#191B20] border-2 border-[#1c1b1b] dark:border-[#353842] shadow-[3px_3px_0px_#1c1b1b] dark:shadow-[3px_3px_0px_#000000] font-code text-xs uppercase font-extrabold text-[#1c1b1b] dark:text-[#55DFFF]">
             <Database className="w-3.5 h-3.5 text-[#006783] dark:text-[#55DFFF]" />
-            Aspiring Data Engineer • Cloud & Data Enthusiast
+            Data Engineer | Data Analytics | Python Developer
           </span>
         </div>
       </motion.div>
@@ -87,7 +87,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
         transition={{ duration: 0.5, delay: 0.2 }}
         className="font-body text-base md:text-lg text-[#1c1b1b] dark:text-[#F5F1E8] max-w-2xl leading-relaxed"
       >
-        I love architecting reliable data pipelines, transforming chaotic raw data streams into sharp analytical insights, and building playful yet pragmatic technology solutions.
+        I architect reliable end-to-end data engineering pipelines, build interactive analytics platforms and machine learning applications, and deliver production-grade full-stack solutions.
       </motion.p>
 
       {/* CTA Buttons */}
@@ -118,11 +118,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
         </button>
 
         <a
-          href="#pipeline-lab"
+          href="#projects"
           onClick={() => sfx.pop()}
           className="font-code text-xs uppercase font-extrabold bg-white dark:bg-[#24262D] text-[#1c1b1b] dark:text-[#F5F1E8] px-4 py-3 border-[2.5px] border-[#1c1b1b] dark:border-[#353842] shadow-[3px_3px_0px_#1c1b1b] dark:shadow-[3px_3px_0px_#000000] hover:bg-[#69c9f0] dark:hover:bg-[#353842] hover:translate-x-[-1.5px] hover:translate-y-[-1.5px] hover:shadow-[4.5px_4.5px_0px_#1c1b1b] dark:hover:shadow-[4.5px_4.5px_0px_#000000] active:translate-x-[2.5px] active:translate-y-[2.5px] active:shadow-none transition-all flex items-center gap-2 cursor-pointer"
         >
-          <span>Test Pipeline Simulator</span>
+          <span>Explore Projects</span>
           <Play className="w-3 h-3 fill-[#1c1b1b] dark:fill-[#F5F1E8]" />
         </a>
       </motion.div>
@@ -135,7 +135,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
         className="flex flex-wrap items-center gap-2 pt-1"
       >
         <a
-          href="https://github.com"
+          href="https://github.com/Dhanush-734/"
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => sfx.blip(600, 0.04)}
@@ -146,7 +146,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
         </a>
 
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/dhanush-s-970376392/"
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => sfx.blip(600, 0.04)}
