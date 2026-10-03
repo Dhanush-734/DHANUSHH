@@ -7,16 +7,16 @@ export const Journey: React.FC = () => {
   const milestones = [
     {
       num: 1,
-      badge: '2020 - 2023',
+      badge: '2022 - 2025',
       badgeColor: 'text-[#725c00] dark:text-[#FFD43B] bg-[#ffe07e] dark:bg-[#191B20]',
       nodeColor: 'bg-[#ffd84d] dark:bg-[#FFD43B] dark:text-[#101114]',
       title: 'BCA at Canara College',
-      desc: 'Built foundational software engineering discipline: algorithms, data structures, relational database management, and object-oriented paradigms. Graduated with academic distinction.',
-      skills: ['C++', 'Java', 'SQL', 'DBMS', 'Software Engineering'],
+      desc: 'Built foundational computing and computer application basics: programming fundamentals, relational database management, data structures, and software basics.',
+      skills: ['Programming Basics', 'SQL', 'DBMS', 'Data Structures', 'Computer Fundamentals'],
     },
     {
       num: 2,
-      badge: '2023 - PRESENT',
+      badge: '2025 - 2027',
       badgeColor: 'text-[#006783] dark:text-[#55DFFF] bg-[#bce9ff] dark:bg-[#191B20]',
       nodeColor: 'bg-[#69c9f0] dark:bg-[#55DFFF] dark:text-[#101114]',
       title: 'MCA at Canara College',
