@@ -166,11 +166,33 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
           <div className="space-y-2">
             <h3 className="font-headline text-base font-black uppercase text-[#1c1b1b] dark:text-[#F5F1E8] flex items-center gap-1.5 border-b border-dashed border-[#1c1b1b] dark:border-[#353842] pb-1">
               <Award className="w-4 h-4 text-[#a8363a] dark:text-[#ff7777]" />
-              Certifications & Honors
+              Licenses &amp; Verified Certifications
             </h3>
-            <ul className="text-xs space-y-1 list-disc list-inside font-body text-[#1c1b1b] dark:text-[#d0cbbf]">
-              <li><strong className="text-[#1c1b1b] dark:text-[#F5F1E8]">NPTEL Cloud Computing:</strong> Score 84% (Top Percentile, IIT Kharagpur)</li>
-              <li><strong className="text-[#1c1b1b] dark:text-[#F5F1E8]">NPTEL Distributed Systems:</strong> Elite Achievement Award (IIT Madras)</li>
+            <ul className="text-xs space-y-2 font-body text-[#1c1b1b] dark:text-[#d0cbbf]">
+              <li className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                <span>
+                  <strong className="text-[#1c1b1b] dark:text-[#F5F1E8]">NPTEL Online Certification — Elite:</strong> Cloud Computing and Distributed Systems (IIT Kanpur, MoE Govt. of India)
+                </span>
+                <span className="font-code font-bold text-[#725c00] dark:text-[#FFD43B] shrink-0">Score: 84% • Jan-Mar 2026</span>
+              </li>
+              <li className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                <span>
+                  <strong className="text-[#1c1b1b] dark:text-[#F5F1E8]">Understanding Data Engineering:</strong> DataCamp (Data Pipelines, Warehouses, Lakes, ETL Architecture)
+                </span>
+                <span className="font-code font-bold text-[#4d4634] dark:text-[#d0cbbf] shrink-0">Issued Jun 2026</span>
+              </li>
+              <li className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                <span>
+                  <strong className="text-[#1c1b1b] dark:text-[#F5F1E8]">AWS Concepts:</strong> DataCamp (Amazon Web Services, Cloud Infrastructure &amp; Security)
+                </span>
+                <span className="font-code font-bold text-[#4d4634] dark:text-[#d0cbbf] shrink-0">Issued Jun 2026</span>
+              </li>
+              <li className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                <span>
+                  <strong className="text-[#1c1b1b] dark:text-[#F5F1E8]">Introduction to SQL:</strong> Simplilearn (Relational Databases, Joins, Complex Queries)
+                </span>
+                <span className="font-code font-bold text-[#4d4634] dark:text-[#d0cbbf] shrink-0">Issued Jun 2026</span>
+              </li>
             </ul>
           </div>
         </div>
